@@ -44,7 +44,6 @@ h1{max-width:1120px;margin:0;font-size:clamp(52px,14vw,84px);font-weight:500;let
 .contact-grid{padding:40px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr;gap:42px}
 .contact-grid h2{margin:0 0 14px;font-size:22px;font-weight:500;letter-spacing:-.04em}
 .contact-grid p{margin:0 0 26px;color:var(--muted);font-size:16px;line-height:1.65}
-.big-email{color:var(--green);font-size:clamp(21px,7vw,30px);letter-spacing:-.03em;overflow-wrap:anywhere}
 form{display:grid;gap:18px}
 label{display:grid;gap:8px;color:#444;font-size:14px;font-weight:500}
 input,textarea,select{width:100%;min-width:0;padding:13px 14px;border:1px solid #cfcfcf;border-radius:6px;background:#fff;color:var(--ink);font:inherit;font-size:16px}
@@ -55,6 +54,7 @@ form button{min-height:48px;padding:14px 24px;border:0;border-radius:6px;backgro
 form button:hover{background:#2b4c3a}
 .optional{color:#666;font-weight:400}
 .form-note{margin:0;color:#666;font-size:13px;line-height:1.55}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 
 footer{margin:auto;padding:26px var(--page-pad) 40px;color:#666;font-size:13px;display:flex;flex-direction:column;gap:16px}
 footer nav{gap:20px;color:#666;font-size:13px;flex-wrap:wrap}
@@ -111,3 +111,10 @@ header{position:relative}
 
 /* Links inside running text need more than colour to stand out */
 .section p a:not(.email),.intro a,.body p a{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.credit a{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.heart{color:var(--red)}
+.captcha{display:grid;gap:8px;color:#444;font-size:14px;font-weight:500}
+.captcha-row{display:flex;align-items:center;gap:14px}
+.captcha-row img{width:150px;height:50px;border:1px solid #cfcfcf;border-radius:6px;background:#fff}
+form .captcha-reload{min-height:0;padding:0;border:0;background:none;color:var(--green);cursor:pointer;font:inherit;font-size:14px;text-decoration:underline;text-underline-offset:3px}
+input[name=enterdigest]{max-width:220px}
