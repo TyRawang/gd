@@ -76,7 +76,11 @@ footer nav{gap:20px;color:#666;font-size:13px;flex-wrap:wrap}
   .page-head .intro{margin-top:28px}
   .block h2,.contact-grid h2{font-size:23px}
   .block p,.block li,.contact-grid p{font-size:17px}
-  footer{max-width:1380px;padding-top:30px;padding-bottom:50px;flex-direction:row;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  footer{max-width:1380px;padding-top:30px;padding-bottom:50px}
+}
+
+@media(min-width:900px){
+  footer{flex-direction:row;justify-content:space-between;align-items:center;gap:20px}
 }
 
 @media(min-width:801px){
